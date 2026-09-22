@@ -1,15 +1,12 @@
-VALID_USERNAME = "admin"
-VALID_PASSWORD = "secret123"
+def calculate_sum(a, b):
+    return a + b
 
 
-def login():
-    username = input("Enter username: ")
-    password = input("Enter password: ")
+print("Simple Calculator")
 
-    if username == VALID_USERNAME and password == VALID_PASSWORD:
-        print("Login Successful!")
-    else:
-        print("Invalid username or password")
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
 
+result = calculate_sum(num1, num2)
 
-login()
+print("Sum:", result)
