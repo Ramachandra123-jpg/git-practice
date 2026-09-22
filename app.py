@@ -1,17 +1,15 @@
-VERSION = "1.0"
+VALID_USERNAME = "admin"
+VALID_PASSWORD = "secret123"
 
 
-def greet_user(name):
-    return f"Hello, {name}! Welcome to Git and GitHub."
+def login():
+    username = input("Enter username: ")
+    password = input("Enter password: ")
+
+    if username == VALID_USERNAME and password == VALID_PASSWORD:
+        print("Login Successful!")
+    else:
+        print("Invalid username or password")
 
 
-def show_version():
-    return f"Application version: {VERSION}"
-
-
-name = input("Enter your name: ")
-
-message = greet_user(name)
-
-print(message)
-print(show_version())
+login()
